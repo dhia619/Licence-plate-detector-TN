@@ -1,6 +1,8 @@
-# Tunisian Car Plate Detection using YOLOv8 🚗📋
+# Tunisian Car Plate Detection using YOLOv8 🚗📋:flag-tn:
 
-This repository contains a fine-tuned YOLOv8 model for detecting car license plates in tunisia. The model has been trained and optimized for accurate plate detection in various environments. The `tn_car_plate.pt` file provided here contains the trained weights of the model.
+This repository contains a fine-tuned YOLOv8 model for detecting car license plates in tunisia. The model has been trained and optimized for accurate plate detection in various environments. The `tn_car_license_plate.pt` file provided here contains the trained weights of the model.
+
+!(demo.png)[demo]
 
 ## Overview
 This project uses the YOLOv8 architecture to detect car license plates. YOLOv8 is a powerful and efficient object detection framework that achieves state-of-the-art results while being lightweight and fast.
@@ -31,14 +33,12 @@ The fine-tuned model is suitable for:
 1. Loading the Model:
     ```python
     from ultralytics import 
-    model = YOLO("car_plate_detector.pt")
+    model = YOLO("tn_car_license_plate.pt")
     ```
 2. Running Inference:
     ```python
-        # Run inference on an image
-        results = model("path/to/your/image.jpg")
-        # Display the results
-        results.show()
+    # Run inference on an image
+    results = model("path/to/your/image.jpg")
     ```
     
     ```python
@@ -47,7 +47,7 @@ The fine-tuned model is suitable for:
     # Output video with detections saved in the `runs/detect` directory
     ```
 ### Dataset
-- collected images from different videos (code in src folder) , images were taken from different angles and in different lighting conditions.
+- collected 104 images from different videos, images were taken from different angles and in different lighting conditions.
 - Manually labeled the images using [Make Sense](https://www.makesense.ai/).
 
 ### Training details:
