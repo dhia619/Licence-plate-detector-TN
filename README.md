@@ -1,4 +1,4 @@
-# Tunisian Car Plate Detection using YOLOv8 🚗📋:flag-tn:
+# Tunisian Car License Plate Detection using YOLOv8 🚗📋🇹🇳:
 
 This repository contains a fine-tuned YOLOv8 model for detecting car license plates in tunisia. The model has been trained and optimized for accurate plate detection in various environments. The `tn_car_license_plate.pt` file provided here contains the trained weights of the model.
 
